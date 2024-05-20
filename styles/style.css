@@ -1,0 +1,10 @@
+/* Basic styling for the sidebar */
+.sidebar {
+  z-index: 10; /* Ensure sidebar is on top */
+}
+
+.sidebar a {
+  /* Style the links inside the sidebar */
+  text-decoration: none;
+  color: #333;
+}
