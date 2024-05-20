@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0b3e05"
+      media="(prefers-color-scheme: dark)"
+    />
+    <title>Alpha Project 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-sans text-gray-800">
+    <header class="bg-white py-5">
+      <nav class="container mx-auto">
+        <ul class="flex justify-between items-center">
+          <div class="flex items-center relative">
+            <input type="checkbox" id="toggleDropdown" class="hidden" />
+            <label
+              for="toggleDropdown"
+              class="cursor-pointer mr-6 border border-gray-300 p-2 rounded-md hover:bg-gray-100"
+            >
+              <img
+                src="assets/icons/toggle-theme.svg"
+                alt="Toggle Icon"
+                class="h-6 w-6"
+              />
+              <div
+                class="dropdown absolute top-10 right-0 bg-white border border-gray-200 shadow-md rounded-md py-2 px-4 mt-2 hidden"
+                id="dropdownMenu"
+              >
+                <label
+                  class="flex items-center py-2 px-4 hover:bg-gray-100 space-x-2 border-b border-gray-200"
+                  ><span class="text-gray-800 w-full text-right"
+                    >حالت روشن</span
+                  >
+                  <img
+                    src="assets/icons/light-outline.svg"
+                    alt="Light Mode Icon"
+                    class="h-5 w-5" />
+                  <input type="radio" name="theme" value="light" class="hidden"
+                /></label>
+                <label
+                  class="flex items-center py-4 px-4 hover:bg-gray-100 space-x-2 border-b border-gray-200"
+                >
+                  <span class="text-gray-800 w-full text-right"
+                    >حالت تاریک</span
+                  >
+                  <img
+                    src="assets/icons/dark-outline.svg"
+                    alt="Dark Mode Icon"
+                    class="h-5 w-5"
+                  />
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="dark"
+                    class="hidden"
+                  />
+                </label>
+                <label
+                  class="flex items-center py-4 px-4 hover:bg-gray-100 space-x-2"
+                >
+                  <span class="text-gray-800 w-full text-right"
+                    >پیروی از دستگاه</span
+                  >
+                  <img
+                    src="assets/icons/toggle-theme.svg"
+                    alt="System Icon"
+                    class="h-5 w-5"
+                  />
+                  <input
+                    type="radio"
+                    name="theme"
+                    value="system"
+                    checked
+                    class="hidden"
+                  />
+                </label>
+              </div>
+            </label>
+          </div>
+          <button
+            class="app-mode bg-[#2C7EF8] hover:bg-[#075CD9] text-white font-bold py-2 px-4 rounded mr-18 focus:outline-none"
+          >
+            ورود به اپلیکیشن
+          </button>
+          <div class="flex px-10">
+            <a
+              href="contact.html"
+              class="ml-16 hover:text-[#075CD9] hover:font-bold"
+              >ارتباط با ما</a
+            >
+            <a
+              href="about.html"
+              class="ml-16 hover:text-[#075CD9] hover:font-bold"
+              >درباره ما</a
+            >
+            <a href="index.html" class="ml-16 text-[#075CD9] font-bold"
+              >صفحه اصلی</a
+            >
+            <a href="index.html" class="text-xl font-bold ml-16">کوئرا لیست</a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="relative hero bg-cover bg-center py-32">
+        <div class="container mx-auto text-center px-4 relative z-10">
+          <a href="about.html"> </a>
+          <h1
+            class="text-5xl sm:text-6xl md:text-4xl text-black mb-6 pb-10 leading-tight"
+          >
+            تمرکز رو وارد زندگیت کن
+          </h1>
+          <h1
+            class="text-5xl sm:text-6xl md:text-7xl font-bold text-black mb-6 pb-10"
+          >
+            به سمت اهدافت اوج بگیر
+          </h1>
+          <div
+            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -mb-8"
+          >
+            <img
+              src="assets/icons/line.svg"
+              alt="Underline"
+              class="w-96 md:w-96 pt-16 z-10"
+            />
+          </div>
+        </div>
+        <p
+          dir="rtl"
+          class="text-lg sm:text-xl text-black opacity-80 mb-10 mt-10 text-center"
+        >
+          زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از
+          آن استفاده می‌کنیم. با
+          <br />اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری
+          کنید.
+        </p>
+        <div class="buttons flex justify-center">
+          <a href="about.html">
+            <button
+              class="bg-[#EBF3FE] hover:bg-[#075CD9] hover:text-white text-[#2C7EF8] font-bold py-3 px-14 rounded-lg mr-4"
+            >
+              درباره ما
+            </button>
+          </a>
+          <a href="app-download-page.html">
+            <button
+              class="bg-[#2C7EF8] hover:bg-[#075CD9] text-white font-bold py-3 px-10 rounded-lg"
+            >
+              ورود به اپلیکیشن
+            </button>
+          </a>
+        </div>
+        <div class="absolute inset-0 z-0 w-full">
+          <img
+            src="assets/icons/star.svg"
+            alt="Star"
+            class="star absolute top-96 left-40"
+          />
+          <img
+            src="assets/icons/star.svg"
+            alt="Star"
+            class="star absolute bottom-10 right-40"
+          />
+          <img
+            src="assets/images/Ellipse 128.svg"
+            alt="Ellipse"
+            class="absolute top-96 left-40 z-[-1]"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>
