@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <!--Navbar-->
+    <nav class="bg-white">
+      <div class="container flex justify-between px-8 items-center h-[10vh]">
+        <!--MenuBar-->
+        <input type="checkbox" id="menuToggle" class="hidden peer" />
+        <label for="menuToggle" class="md:hidden cursor-pointer">
+          <img src="assets/icons/menu.svg" alt="menuToggle" />
+        </label>
+        <!--Title-->
+        <a href="index.html" class="text-xl font-bold">کوئرا لیست</a>
+        <!--Empty Place-->
+        <div class="w-4 bg-white h-4"></div>
+        <!--SideBar-->
+        <div
+          class="sidebar fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out peer-checked:translate-x-0"
+          id="sidebarMenu"
+        >
+          <div class="px-8">
+            <label for="menuToggle" class="absolute right-8 cursor-pointer">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </label>
+            <!--3 Links in SideBar-->
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >ارتباط با ما</a
+            >
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100">درباره ما</a>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100">صفحه اصلی</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="w-[328px] h-[509px]justify-center m-auto">
+      <div class="m-auto my-5 w-[328px]">
+        <h1 class="font-extrabold text-[24px] text-center">تماس با ما</h1>
+        <p class="text-center py-5 text-[14px]">
+          چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.
+        </p>
+      </div>
+      <div class="w-[328px] bg-white border rounded-[16px] m-auto">
+        <div class="m-auto my-2 w-[296px]">
+          <div class="flex justify-between items-center">
+            <input
+              class="w-[140px] h-[40px] my-2 mx-[1px] border-2 rounded-[10px] p-2"
+              type="text"
+              placeholder="نام شما"
+            />
+            <input
+              class="w-[140px] h-[40px] border-2 rounded-[10px] p-2"
+              type="text"
+              placeholder="نام خانوادگی شما"
+            />
+          </div>
+          <input
+            class="w-[296px] h-[40px] border-2 rounded-[10px] my-2 p-2"
+            type="text"
+            placeholder="ایمیل"
+          />
+          <input
+            class="w-[296px] h-[40px] border-2 rounded-[10px] my-2 p-2"
+            type="text"
+            placeholder="شماره تماس شما"
+          />
+          <input
+            class="w-[296px] h-[120px] border-2 rounded-[10px] my-2 p-2"
+            type="text"
+            placeholder="متن پیام شما"
+          />
+          <button
+            class="w-[296px] h-[40px] bg-blue-600 text-white m-auto border rounded-[10px] my-2"
+          >
+            ارسال پیام
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="grid grid-cols-2 my-8 gap-3">
+          <div class="bg-white w-[156px] h-[56px] rounded-xl border">
+            <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3"
+                src="./assets/icons/sms.svg"
+                alt="email"
+              />
+            </div>
+          </div>
+          <div class="bg-white w-[156px] h-[56px] rounded-xl border">
+            <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3"
+                src="./assets/icons/empty call.svg"
+                alt="phone"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-white w-[328px] h-[56px] col-end-2 rounded-xl border flex justify-center items-center"
+          >
+            <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3"
+                src="./assets/icons/github icon.svg"
+                alt="github"
+              />
+            </div>
+            <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3"
+                src="./assets/icons/twitter.svg"
+                alt="twitter"
+              />
+            </div>
+            <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3"
+                src="./assets/icons/linkedin.svg"
+                alt="twitter"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center items-center gap-3 pt-10">
+        <div class="before:content block w-[113px] h-[1px] bg-gray-500"></div>
+        <h3 class="text-black text-center">کوئرالیست</h3>
+        <div class="after:content block w-[113px] h-[1px] bg-gray-500"></div>
+      </div>
+      <div class="w-[328px] pt-10">
+        <div class="w-[328px] mb-10">
+          <h5 class="mt-1 mr-1 font-bold text-[14px] leading-[21.7px]">
+            با ما در ارتباط باش
+          </h5>
+          <p class="mt-1 mr-1 text-xs font-normal w-[311px]">
+            اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
+          </p>
+        </div>
+        <div class="w-[328px] max-w-[100%] relative">
+          <input
+            class="w-[100%] h-[50px] border-2 border-solid border-gray-500 rounded-[16px] py-4 px-4"
+            type="email"
+            placeholder="ایمیل"
+          />
+          <button
+            class="h-[40px] w-[65px] border text-white rounded-[14px] bg-blue-600 absolute left-[5px] top-[5px]"
+          >
+            ارسال
+          </button>
+        </div>
+        <div class="grid grid-cols-2 my-8 gap-4">
+          <div class="bg-white border rounded-xl p-3 row-span-2">
+            <div
+              class="rounded-[50%] w-10 h-10 m-auto my-4 bg-blue-100 relative"
+            >
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3"
+                src="./assets/icons/location.svg"
+                alt="location"
+              />
+            </div>
+            <p class="text-[10px] my-5 text-center">
+              آدرس دفتر مرکزی: پونک -<br />
+              خیابان اشرفی اصفهانی -<br />
+              خیابان صبحدل- بن بست شب بو
+            </p>
+          </div>
+          <div class="bg-white border rounded-xl p-3">
+            <div class="rounded-[50%] w-10 h-10 my-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/call.svg"
+              />
+            </div>
+          </div>
+          <div class="bg-white border rounded-xl p-3">
+            <div class="rounded-[50%] w-10 h-10 my-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/fluent_fax-20-filled.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-[12px] text-gray-600">
+        تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+      </p>
+    </div>
+  </body>
+</html>
