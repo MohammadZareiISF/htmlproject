@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Light Theme for Safari Toolbar-->
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <!--Dark Theme for Safari Toolbar-->
+    <meta
+      name="theme-color"
+      content="#0b3e05"
+      media="(prefers-color-scheme: dark)"
+    />
+    <!--Title-->
+    <title>Alpha Project 1</title>
+    <!--Styles & Scripts-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+  </head>
+  <!----------------------Body---------------------->
+  <body class="font-sans text-gray-800">
+    <!--Navbar-->
+    <nav class="bg-white">
+      <div class="container flex justify-between px-8 items-center h-[10vh]">
+        <!--MenuBar-->
+        <input type="checkbox" id="menuToggle" class="hidden peer" />
+        <label for="menuToggle" class="md:hidden cursor-pointer">
+          <img src="assets/icons/menu.svg" alt="menuToggle" />
+        </label>
+        <!--Title-->
+        <a href="index.html" class="text-xl font-bold">کوئرا لیست</a>
+        <!--Empty Place-->
+        <div class="w-4 bg-white h-4"></div>
+        <!--SideBar-->
+        <div
+          class="sidebar fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out peer-checked:translate-x-0"
+          id="sidebarMenu"
+        >
+          <div class="px-8">
+            <label for="menuToggle" class="absolute right-8 cursor-pointer">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </label>
+            <!--3 Links in SideBar-->
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
+              >ارتباط با ما</a
+            >
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100">درباره ما</a>
+            <a href="#" class="block py-2 px-4 hover:bg-gray-100">صفحه اصلی</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- <header> -->
+    <div>
+      <header
+        class="bg-gradient-to-b from-[#EBF3FF] w-[360px] h-[410px] m-auto relative"
+      >
+        <div>
+          <img
+            class="top-[40px] left-[296px] absolute"
+            src="./assets/icons/star.svg"
+            alt="star"
+          />
+
+          <h2
+            class="text-[24px] text-[#141414] absolute top-[80px] right-[65px]"
+          >
+            تمرکز رو وارد زندگیت کن
+          </h2>
+          <h1
+            class="font-black text-[32px] text-[#141414] absolute top-[130px] right-[50px]"
+          >
+            به سمت اهدافت اوج بگیر
+          </h1>
+          <img
+            class="top-[200px] left-[40px] absolute"
+            src="./assets/icons/star.svg"
+            alt="star"
+          />
+          <img
+            class="w-[90px] h-[21.16px] rotate-[-10 deg] absolute top-[170px] left-[140px]"
+            src="./assets/icons/line.svg"
+            alt="line"
+          />
+          <p
+            class="mx-[30px] text-[12px] leading-[18.6px] text-[#141414] w-[312px] text-center absolute top-[250px] left-[-5px]"
+          >
+            زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه
+            از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
+            برنامه‌ریزی موثر سپری کنید."
+          </p>
+        </div>
+        <div class="absolute top-[335px] left-[15px] grid grid-cols-2 gap-4">
+          <button
+            class="rounded-md bg-blue-600 text-white w-[156px] h-[40px] text-center"
+          >
+            ورود به اپلیکیشن
+          </button>
+          <button
+            class="rounded-md bg-blue-100 text-blue-600 w-[156px] h-[40px] text-center"
+          >
+            درباره ما
+          </button>
+        </div>
+      </header>
+    </div>
+    <!-- <main> -->
+    <main class="m-auto">
+      <div class="grid justify-center items-center">
+        <img
+          class="w-[328px] h-auto"
+          src="./assets/images/application-image-light.png"
+          alt="application-image-light"
+        />
+      </div>
+
+      <div class="w-[312px] m-auto my-6">
+        <div>
+          <h3
+            class="text-center font-semibold text-[20px] text-[#191c1e] leading-[72px]"
+          >
+            ویژگی‌های اپلیکیشن کوئرالیست
+          </h3>
+          <h6 class="text-center text-[10px] font-normal leading-[15.5px]">
+            زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه
+            از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
+            برنامه‌ریزی موثر سپری کنید."
+          </h6>
+        </div>
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 my-6">
+          <div class="bg-white border rounded-xl p-3 flex-col justify-center">
+            <div
+              class="rounded-[50%] w-10 h-10 m-auto my-2 bg-blue-100 relative"
+            >
+              <img
+                class="bg-blue-100 w-[16px] h-[16px] absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/brush.svg"
+              />
+            </div>
+            <h6 class="font-bold text-[12px] leading-[21.6px] text-center">
+              رابط کاربری جذاب
+            </h6>
+            <p class="font-normal text-[10px] leading-[16px] text-center">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+          <div class="bg-white border rounded-xl p-3 flex-col justify-center">
+            <div
+              class="rounded-[50%] w-10 h-10 m-auto my-2 bg-blue-100 relative"
+            >
+              <img
+                class="bg-blue-100 w-[16px] h-[16px] absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/category.svg"
+              />
+            </div>
+            <h6 class="font-bold text-[12px] leading-[21.6px] text-center">
+              قابلیت دسته بندی کارها
+            </h6>
+            <p class="font-normal text-[10px] leading-[16px] text-center">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+          <div class="bg-white border rounded-xl p-3 flex-col justify-center">
+            <div
+              class="rounded-[50%] w-10 h-10 m-auto my-2 bg-blue-100 relative"
+            >
+              <img
+                class="bg-blue-100 w-[16px] h-[16px] absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/location-tick.svg"
+              />
+            </div>
+            <h6 class="font-bold text-[12px] leading-[21.6px] text-center">
+              دسترسی آسان
+            </h6>
+            <p class="font-normal text-[10px] leading-[16px] text-center">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+          <div class="bg-white border rounded-xl p-3 flex-col justify-center">
+            <div
+              class="rounded-[50%] w-10 h-10 m-auto my-2 bg-blue-100 relative"
+            >
+              <img
+                class="bg-blue-100 w-[16px] h-[16px] absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/user-tag.svg"
+              />
+            </div>
+            <h6 class="font-bold text-[12px] leading-[21.6px] text-center">
+              پشتیبانی آنلاین
+            </h6>
+            <p class="font-normal text-[10px] leading-[16px] text-center">
+              اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-[328px] m-auto my-6">
+        <div>
+          <h6
+            class="font-normal text-[10px] text-[#141414] leading-[15.5px] text-center"
+          >
+            اپلیکیشن اندروید و IOS
+          </h6>
+          <h6
+            class="font-semibold text-[20px] text-[#191c1e] leading-[72px] text-center"
+          >
+            دانلود اپلیکیشن
+          </h6>
+        </div>
+        <div class="flex-col justify-center">
+          <img
+            class="w-[190px] m-auto"
+            src="./assets/images/app-mobile-small-light.png"
+            alt="app-mobile-small-light"
+          />
+          <p class="w-[312px] text-center font-normal text-[11px] my-4">
+            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
+            اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود
+            نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده
+            نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از
+            اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+          </p>
+          <div
+            class="w-[165px] h-[40px] m-auto flex justify-center items-center"
+          >
+            <a class="text-[#2C7EF8] mx-2 flex items-center" href="quera.org"
+              >ورود به اپلیکیشن</a
+            >
+            <img
+              class="flex items-center"
+              src="./assets/icons/arrow-right.svg"
+              alt="arrow-right"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-[806px] m-auto">
+        <h2
+          class="w-[254px] font-semibold text-[20px] leading-[72px] text-center text-[#191c1e]"
+        >
+          نظرات کاربران
+        </h2>
+      </div>
+    </main>
+    <div class="m-auto">
+      <div class="flex justify-center items-center gap-3 pt-10">
+        <div class="before:content block w-[113px] h-[1px] bg-gray-500"></div>
+        <h3 class="text-black text-center">کوئرالیست</h3>
+        <div class="after:content block w-[113px] h-[1px] bg-gray-500"></div>
+      </div>
+      <div class="w-[328px] pt-10 m-auto">
+        <div class="w-[328px] mb-10">
+          <h5 class="mt-1 mr-1 font-bold text-[14px] leading-[21.7px]">
+            با ما در ارتباط باش
+          </h5>
+          <p class="mt-1 mr-1 text-xs font-normal w-[311px]">
+            اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
+          </p>
+        </div>
+        <div class="w-[328px] max-w-[100%] relative">
+          <input
+            class="w-[100%] h-[50px] border-2 border-solid border-gray-500 rounded-[16px] py-4 px-4"
+            type="email"
+            placeholder="ایمیل"
+          />
+          <button
+            class="h-[40px] w-[65px] border text-white rounded-[14px] bg-blue-600 absolute left-[5px] top-[5px]"
+          >
+            ارسال
+          </button>
+        </div>
+        <div class="grid grid-cols-2 my-8 gap-4">
+          <div class="bg-white border rounded-xl p-3 row-span-2">
+            <div
+              class="rounded-[50%] w-10 h-10 m-auto my-4 bg-blue-100 relative"
+            >
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3"
+                src="./assets/icons/location.svg"
+                alt="location"
+              />
+            </div>
+            <p class="text-[10px] my-5 text-center">
+              آدرس دفتر مرکزی: پونک -<br />
+              خیابان اشرفی اصفهانی -<br />
+              خیابان صبحدل- بن بست شب بو
+            </p>
+          </div>
+          <div class="bg-white border rounded-xl p-3">
+            <div class="rounded-[50%] w-10 h-10 my-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/call.svg"
+              />
+            </div>
+          </div>
+          <div class="bg-white border rounded-xl p-3">
+            <div class="rounded-[50%] w-10 h-10 my-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/fluent_fax-20-filled.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="text-center text-[12px] text-gray-600">
+        تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+      </p>
+    </div>
+  </body>
+</html>
