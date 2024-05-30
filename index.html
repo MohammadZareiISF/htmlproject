@@ -19,7 +19,7 @@
     <title>Alpha Project 1</title>
     <!--Styles & Scripts-->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
   </head>
@@ -71,52 +71,34 @@
     </nav>
     <!-- <header> -->
     <div>
-      <header
-        class="bg-gradient-to-b from-[#EBF3FF] w-[360px] h-[410px] m-auto relative"
-      >
-        <div>
-          <img
-            class="top-[40px] left-[296px] absolute"
-            src="./assets/icons/star.svg"
-            alt="star"
-          />
+      <header class="w-full bg-gradient-to-b from-[#EBF3FF] m-auto relative">
+        <div class="flex flex-col gap-8 justify-center items-center py-20">
+          <img class="top-10" src="./assets/icons/star.svg" alt="star" />
 
-          <h2
-            class="text-[24px] text-[#141414] absolute top-[80px] right-[65px]"
-          >
-            تمرکز رو وارد زندگیت کن
-          </h2>
-          <h1
-            class="font-black text-[32px] text-[#141414] absolute top-[130px] right-[50px]"
-          >
+          <h2 class="text-2xl text-[#141414]">تمرکز رو وارد زندگیت کن</h2>
+          <h1 class="font-black text-4xl text-[#141414]">
             به سمت اهدافت اوج بگیر
           </h1>
           <img
-            class="top-[200px] left-[40px] absolute"
+            class="top-52 left-10 absolute"
             src="./assets/icons/star.svg"
             alt="star"
           />
-          <img
-            class="w-[90px] h-[21.16px] rotate-[-10 deg] absolute top-[170px] left-[140px]"
-            src="./assets/icons/line.svg"
-            alt="line"
-          />
-          <p
-            class="mx-[30px] text-[12px] leading-[18.6px] text-[#141414] w-[312px] text-center absolute top-[250px] left-[-5px]"
-          >
+          <p class="mx-8 text-xs leading-4 text-[#141414]">
             زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه
             از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
             برنامه‌ریزی موثر سپری کنید."
           </p>
+          <img src="./assets/icons/line.svg" alt="line" />
         </div>
-        <div class="absolute top-[335px] left-[15px] grid grid-cols-2 gap-4">
+        <div class="flex justify-center gap-4">
           <button
-            class="rounded-md bg-blue-600 text-white w-[156px] h-[40px] text-center"
+            class="rounded-md bg-blue-600 text-white py-2 px-6 text-center"
           >
             ورود به اپلیکیشن
           </button>
           <button
-            class="rounded-md bg-blue-100 text-blue-600 w-[156px] h-[40px] text-center"
+            class="rounded-md bg-blue-100 text-blue-600 py-2 px-6 text-center"
           >
             درباره ما
           </button>
@@ -124,42 +106,40 @@
       </header>
     </div>
     <!-- <main> -->
-    <main class="m-auto">
+    <main class="mx-40">
       <div class="grid justify-center items-center">
         <img
-          class="w-[328px] h-auto"
+          class="h-auto"
           src="./assets/images/application-image-light.png"
           alt="application-image-light"
         />
       </div>
 
-      <div class="w-[312px] m-auto my-6">
-        <div>
-          <h3
-            class="text-center font-semibold text-[20px] text-[#191c1e] leading-[72px]"
-          >
+      <div class="my-6">
+        <div class="flex flex-col gap-8">
+          <h3 class="text-center font-semibold text-xl text-[#191c1e]">
             ویژگی‌های اپلیکیشن کوئرالیست
           </h3>
-          <h6 class="text-center text-[10px] font-normal leading-[15.5px]">
+          <h6 class="text-center text-xs font-normal leading-4">
             زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه
             از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و
             برنامه‌ریزی موثر سپری کنید."
           </h6>
         </div>
-        <div class="grid grid-cols-2 grid-rows-2 gap-4 my-6">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 my-6">
           <div class="bg-white border rounded-xl p-3 flex-col justify-center">
             <div
               class="rounded-[50%] w-10 h-10 m-auto my-2 bg-blue-100 relative"
             >
               <img
-                class="bg-blue-100 w-[16px] h-[16px] absolute right-3 bottom-3 rounded-[50%]"
+                class="bg-blue-100 w-4 h-4 absolute right-3 bottom-3 rounded-[50%]"
                 src="./assets/icons/brush.svg"
               />
             </div>
-            <h6 class="font-bold text-[12px] leading-[21.6px] text-center">
+            <h6 class="font-bold text-xs leading-6 text-center">
               رابط کاربری جذاب
             </h6>
-            <p class="font-normal text-[10px] leading-[16px] text-center">
+            <p class="font-normal text-xs leading-4 text-center">
               اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
             </p>
           </div>
@@ -168,14 +148,14 @@
               class="rounded-[50%] w-10 h-10 m-auto my-2 bg-blue-100 relative"
             >
               <img
-                class="bg-blue-100 w-[16px] h-[16px] absolute right-3 bottom-3 rounded-[50%]"
+                class="bg-blue-100 w-4 h-4 absolute right-3 bottom-3 rounded-[50%]"
                 src="./assets/icons/category.svg"
               />
             </div>
-            <h6 class="font-bold text-[12px] leading-[21.6px] text-center">
+            <h6 class="font-bold text-xs leading-6 text-center">
               قابلیت دسته بندی کارها
             </h6>
-            <p class="font-normal text-[10px] leading-[16px] text-center">
+            <p class="font-normal text-xs leading-4 text-center">
               اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
             </p>
           </div>
@@ -184,14 +164,12 @@
               class="rounded-[50%] w-10 h-10 m-auto my-2 bg-blue-100 relative"
             >
               <img
-                class="bg-blue-100 w-[16px] h-[16px] absolute right-3 bottom-3 rounded-[50%]"
+                class="bg-blue-100 w-4 h-4 absolute right-3 bottom-3 rounded-[50%]"
                 src="./assets/icons/location-tick.svg"
               />
             </div>
-            <h6 class="font-bold text-[12px] leading-[21.6px] text-center">
-              دسترسی آسان
-            </h6>
-            <p class="font-normal text-[10px] leading-[16px] text-center">
+            <h6 class="font-bold text-xs leading-6 text-center">دسترسی آسان</h6>
+            <p class="font-normal text-xs leading-4 text-center">
               اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
             </p>
           </div>
@@ -200,48 +178,43 @@
               class="rounded-[50%] w-10 h-10 m-auto my-2 bg-blue-100 relative"
             >
               <img
-                class="bg-blue-100 w-[16px] h-[16px] absolute right-3 bottom-3 rounded-[50%]"
+                class="bg-blue-100 w-4 h-4 absolute right-3 bottom-3 rounded-[50%]"
                 src="./assets/icons/user-tag.svg"
               />
             </div>
-            <h6 class="font-bold text-[12px] leading-[21.6px] text-center">
+            <h6 class="font-bold text-xs leading-6 text-center">
               پشتیبانی آنلاین
             </h6>
-            <p class="font-normal text-[10px] leading-[16px] text-center">
+            <p class="font-normal text-xs leading-4 text-center">
               اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
             </p>
           </div>
         </div>
       </div>
-      <div class="w-[328px] m-auto my-6">
-        <div>
-          <h6
-            class="font-normal text-[10px] text-[#141414] leading-[15.5px] text-center"
-          >
+      <div class="w-full flex justify-center items-center m-auto py-10 my-6">
+        <div class="flex-col justify-center items-center my-10">
+          <h6 class="font-normal text-xs text-[#141414] text-center">
             اپلیکیشن اندروید و IOS
           </h6>
-          <h6
-            class="font-semibold text-[20px] text-[#191c1e] leading-[72px] text-center"
-          >
+          <h6 class="font-semibold text-xl text-[#191c1e] text-center">
             دانلود اپلیکیشن
           </h6>
         </div>
         <div class="flex-col justify-center">
           <img
-            class="w-[190px] m-auto"
+            class="max-sm:w-48 m-auto"
             src="./assets/images/app-mobile-small-light.png"
             alt="app-mobile-small-light"
           />
-          <p class="w-[312px] text-center font-normal text-[11px] my-4">
+          <img src="./assets/images/app-web-light.png" alt="app-web-light" />
+          <p class="w-80 text-center font-normal text-xs my-4">
             کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
             اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود
             نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده
             نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از
             اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
           </p>
-          <div
-            class="w-[165px] h-[40px] m-auto flex justify-center items-center"
-          >
+          <div class="w-40 h-10 m-auto flex justify-center items-center">
             <a class="text-[#2C7EF8] mx-2 flex items-center" href="quera.org"
               >ورود به اپلیکیشن</a
             >
@@ -253,37 +226,33 @@
           </div>
         </div>
       </div>
-      <div class="w-[806px] m-auto">
-        <h2
-          class="w-[254px] font-semibold text-[20px] leading-[72px] text-center text-[#191c1e]"
-        >
+      <div class="m-auto flex justify-center items-center">
+        <h2 class="w-64 font-semibold text-xl text-center text-[#191c1e]">
           نظرات کاربران
         </h2>
       </div>
     </main>
     <div class="m-auto">
       <div class="flex justify-center items-center gap-3 pt-10">
-        <div class="before:content block w-[113px] h-[1px] bg-gray-500"></div>
+        <div class="before:content block w-28 bg-gray-500"></div>
         <h3 class="text-black text-center">کوئرالیست</h3>
-        <div class="after:content block w-[113px] h-[1px] bg-gray-500"></div>
+        <div class="after:content block w-28 bg-gray-500"></div>
       </div>
-      <div class="w-[328px] pt-10 m-auto">
-        <div class="w-[328px] mb-10">
-          <h5 class="mt-1 mr-1 font-bold text-[14px] leading-[21.7px]">
-            با ما در ارتباط باش
-          </h5>
-          <p class="mt-1 mr-1 text-xs font-normal w-[311px]">
+      <div class="w-80 pt-10 m-auto">
+        <div class="w-80 mb-10">
+          <h5 class="mt-1 mr-1 font-bold text-xs">با ما در ارتباط باش</h5>
+          <p class="mt-1 mr-1 text-xs font-normal w-72">
             اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
           </p>
         </div>
-        <div class="w-[328px] max-w-[100%] relative">
+        <div class="w-80 max-w-[100%] relative">
           <input
-            class="w-[100%] h-[50px] border-2 border-solid border-gray-500 rounded-[16px] py-4 px-4"
+            class="w-[100%] h-14 border-2 border-solid border-gray-500 rounded-2xl py-4 px-4"
             type="email"
             placeholder="ایمیل"
           />
           <button
-            class="h-[40px] w-[65px] border text-white rounded-[14px] bg-blue-600 absolute left-[5px] top-[5px]"
+            class="h-10 w-16 border text-white rounded-xl bg-blue-600 absolute left-1 top-1"
           >
             ارسال
           </button>
@@ -299,7 +268,7 @@
                 alt="location"
               />
             </div>
-            <p class="text-[10px] my-5 text-center">
+            <p class="text-xs my-5 text-center">
               آدرس دفتر مرکزی: پونک -<br />
               خیابان اشرفی اصفهانی -<br />
               خیابان صبحدل- بن بست شب بو
@@ -323,7 +292,7 @@
           </div>
         </div>
       </div>
-      <p class="text-center text-[12px] text-gray-600">
+      <p class="text-center text-xs text-gray-600">
         تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
       </p>
     </div>
