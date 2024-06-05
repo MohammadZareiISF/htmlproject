@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تماس با ما</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <nav class="bg-white py-4 mx-10 flex items-center justify-center">
+      <div
+        class="container flex justify-between md:justify-normal items-center h-[5vh]"
+      >
+        <!--MenuBar-->
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+        <label for="menu-toggle" class="md:hidden cursor-pointer block">
+          <img src="assets/icons/menu.svg" alt="menuToggle" />
+        </label>
+
+        <!-- Sidebar -->
+        <div
+          class="fixed inset-y-0 left-0 w-full transform translate-x-full bg-blue-500 md:hidden transition duration-300 ease-in-out text-white p-10"
+          id="sidebar"
+        >
+          <!-- 3 Links -->
+          <div class="grid container gap-4 justify-center text-4xl">
+            <a
+              href="index.html"
+              class="text-blue-500 bg-white hover:bg-white hover:text-blue-500 p-5 transform ease-in-out duration-300 rounded-xl flex justify-center"
+              >صفحه اصلی</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:bg-white hover:text-blue-500 p-5 transform ease-in-out duration-300 rounded-xl flex justify-center"
+              >درباره ما</a
+            >
+            <a
+              href="contact.html"
+              class="text-white hover:bg-white hover:text-blue-500 p-5 transform ease-in-out duration-300 rounded-xl flex justify-center"
+              >ارتباط با ما</a
+            >
+            <!-- Close Button -->
+            <label
+              for="menu-toggle"
+              class="relative cursor-pointer md:hidden bg-blue-400 hover:bg-white hover:text-blue-500 p-5 transform ease-in-out duration-300 rounded-xl flex justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </label>
+          </div>
+        </div>
+        <div>
+          <!--Title-->
+          <a href="index.html" class="text-xl font-bold md:pl-10">کوئرا لیست</a>
+        </div>
+        <!--Empty Place-->
+        <div class="w-4 bg-white h-4 md:hidden"></div>
+        <!-- 3 Links -->
+        <div class="hidden md:flex gap-10">
+          <a href="index.html" class="text-blue-500 hover:text-blue-700"
+            >صفحه اصلی</a
+          >
+          <a href="about.html" class="text-gray-800 hover:text-blue-500"
+            >درباره ما</a
+          >
+          <a href="contact.html" class="text-gray-800 hover:text-blue-500"
+            >ارتباط با ما</a
+          >
+        </div>
+      </div>
+      <!-- Buttons on Left -->
+      <div class="md:flex gap-3 hidden items-center">
+        <!-- Blue Botton -->
+        <div>
+          <button
+            class="bg-blue-500 text-white hover:bg-blue-700 w-36 h-11 rounded"
+          >
+            ورود به اپلیکیشن
+          </button>
+        </div>
+        <!-- Toggle Theme Button -->
+        <div>
+          <button
+            class="bg-white border text-white hover:bg-gray-300 rounded-lg h-11 w-11 px-3 flex items-center"
+          >
+            <img src="assets/icons/toggle-theme.svg" alt="toggle-theme" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="w-[328px] h-[509px]justify-center m-auto">
+      <div class="m-auto my-5 w-[328px]">
+        <h1 class="font-extrabold text-[24px] text-center">تماس با ما</h1>
+        <p class="text-center py-5 text-[14px]">
+          چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.
+        </p>
+      </div>
+      <div class="w-80 bg-white border rounded-2xl m-auto">
+        <div class="m-auto flex flex-col justify-center my-2 w-72">
+          <div class="flex justify-center items-center">
+            <input
+              class="w-36 my-2 mx-[1px] border-2 rounded-xl p-2"
+              type="text"
+              placeholder="نام شما"
+            />
+            <input
+              class="w-36 border-2 rounded-xl p-2"
+              type="text"
+              placeholder="نام خانوادگی شما"
+            />
+          </div>
+          <input
+            class="w-72 border-2 rounded-xl my-2 p-2"
+            type="text"
+            placeholder="ایمیل"
+          />
+          <input
+            class="w-72 border-2 rounded-xl my-2 p-2"
+            type="text"
+            placeholder="شماره تماس شما"
+          />
+          <input
+            class="w-72 h-28 border-2 rounded-xl my-2 p-2"
+            type="text"
+            placeholder="متن پیام شما"
+          />
+          <button
+            class="w-72 bg-blue-600 flex justify-center text-white py-2 m-auto border rounded-[10px] my-2"
+          >
+            ارسال پیام
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center items-center my-3 gap-3">
+      <div class="flex justify-center items-center gap-2">
+        <div
+          class="flex justify-center items-center pl-2 bg-white w-40 rounded-xl border"
+        >
+          <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+            <img
+              class="bg-blue-100 absolute right-3 bottom-3"
+              src="./assets/icons/sms.svg"
+              alt="email"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <h6 class="font-semibold">ایمیل</h6>
+            <p class="text-[10px]">QueraList@gmail.com</p>
+          </div>
+        </div>
+        <div
+          class="flex justify-center items-center pl-11 bg-white w-40 rounded-xl border"
+        >
+          <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+            <img
+              class="bg-blue-100 absolute right-3 bottom-3"
+              src="./assets/icons/empty call.svg"
+              alt="phone"
+            />
+          </div>
+          <div class="flex flex-col justify-center">
+            <h6 class="font-semibold">تلفن</h6>
+            <p class="text-[10px]">09121234567</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-white w-[328px] h-[56px] col-end-2 rounded-xl border flex justify-center items-center"
+      >
+        <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+          <img
+            class="bg-blue-100 absolute right-3 bottom-3"
+            src="./assets/icons/github icon.svg"
+            alt="github"
+          />
+        </div>
+        <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+          <img
+            class="bg-blue-100 absolute right-3 bottom-3"
+            src="./assets/icons/twitter.svg"
+            alt="twitter"
+          />
+        </div>
+        <div class="rounded-[50%] w-10 h-10 my-2 mx-2 bg-blue-100 relative">
+          <img
+            class="bg-blue-100 absolute right-3 bottom-3"
+            src="./assets/icons/linkedin.svg"
+            alt="twitter"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="px-4">
+      <div class="flex justify-center gap-6 items-center pt-10">
+        <hr class="before:content h-0.5 block w-full md:w-60 bg-gray-400" />
+        <h3 class="text-black text-center text-xl">کوئرالیست</h3>
+        <hr class="after:content h-0.5 block w-full md:w-60 bg-gray-400" />
+      </div>
+
+      <div class="flex md:flex-row flex-col justify-center">
+        <div
+          class="pt-10 px-4 sm:flex flex-col justify-center flex-1 md:order-2"
+        >
+          <div class="md:flex justify-center">
+            <div class="mb-10 md:flex- justify-center">
+              <h5 class="mb-3 font-bold">با ما در ارتباط باش</h5>
+              <p class="text-sm font-normal">
+                اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+                بشی.
+              </p>
+            </div>
+            <div class="w-full relative flex justify-end items-center md:w-96">
+              <input
+                class="w-full h-14 border border-solid border-gray-300 rounded-2xl py-4 px-4"
+                type="email"
+                placeholder="ایمیل"
+              />
+              <button
+                class="h-10 w-16 border text-white rounded-xl bg-blue-600 absolute left-2"
+              >
+                ارسال
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 my-8 gap-4 flex-1 md:order-1">
+          <div class="bg-white border rounded-xl p-3 w-full row-span-2">
+            <div
+              class="rounded-[50%] w-10 h-10 m-auto my-4 bg-blue-100 relative"
+            >
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3"
+                src="./assets/icons/location.svg"
+                alt="location"
+              />
+            </div>
+            <p class="text-xs my-5 text-center">
+              آدرس دفتر مرکزی: پونک -<br />
+              خیابان اشرفی اصفهانی -<br />
+              خیابان صبحدل- بن بست شب بو
+            </p>
+          </div>
+          <div
+            class="bg-white border rounded-xl p-3 w-full flex gap-4 justify-center items-center"
+          >
+            <div class="rounded-[50%] w-10 h-10 my-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/call.svg"
+              />
+            </div>
+            <div class="text-xs">
+              <p>تلفن پشتیبانی</p>
+              <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+            </div>
+          </div>
+          <div
+            class="bg-white border rounded-xl p-3 flex gap-4 justify-center items-center w-full"
+          >
+            <div class="rounded-[50%] w-10 h-10 my-2 bg-blue-100 relative">
+              <img
+                class="bg-blue-100 absolute right-3 bottom-3 rounded-[50%]"
+                src="./assets/icons/fluent_fax-20-filled.svg"
+              />
+            </div>
+            <div class="text-xs">
+              <p>تلفن پشتیبانی</p>
+              <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-gray-600 px-4 pb-10">
+      تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+    </footer>
+  </body>
+</html>
