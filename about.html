@@ -7,31 +7,49 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-50">
-    <!--Navbar-->
-    <nav class="bg-white">
-      <div class="container flex justify-between px-8 items-center h-[10vh]">
+    <nav class="bg-white py-4 mx-10 flex items-center justify-center">
+      <div
+        class="container flex justify-between md:justify-normal items-center h-[5vh]"
+      >
         <!--MenuBar-->
-        <input type="checkbox" id="menuToggle" class="hidden peer" />
-        <label for="menuToggle" class="md:hidden cursor-pointer">
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+        <label for="menu-toggle" class="md:hidden cursor-pointer block">
           <img src="assets/icons/menu.svg" alt="menuToggle" />
         </label>
-        <!--Title-->
-        <a href="index.html" class="text-xl font-bold">کوئرا لیست</a>
-        <!--Empty Place-->
-        <div class="w-4 bg-white h-4"></div>
-        <!--SideBar-->
+
+        <!-- Sidebar -->
         <div
-          class="sidebar fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out peer-checked:translate-x-0"
-          id="sidebarMenu"
+          class="fixed inset-y-0 left-0 w-full transform translate-x-full bg-blue-500 md:hidden transition duration-300 ease-in-out text-white p-10"
+          id="sidebar"
         >
-          <div class="px-8">
-            <label for="menuToggle" class="absolute right-8 cursor-pointer">
+          <!-- 3 Links -->
+          <div class="grid container gap-4 justify-center text-4xl">
+            <a
+              href="index.html"
+              class="text-blue-500 bg-white hover:bg-white hover:text-blue-500 p-5 transform ease-in-out duration-300 rounded-xl flex justify-center"
+              >صفحه اصلی</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:bg-white hover:text-blue-500 p-5 transform ease-in-out duration-300 rounded-xl flex justify-center"
+              >درباره ما</a
+            >
+            <a
+              href="contact.html"
+              class="text-white hover:bg-white hover:text-blue-500 p-5 transform ease-in-out duration-300 rounded-xl flex justify-center"
+              >ارتباط با ما</a
+            >
+            <!-- Close Button -->
+            <label
+              for="menu-toggle"
+              class="relative cursor-pointer md:hidden bg-blue-400 hover:bg-white hover:text-blue-500 p-5 transform ease-in-out duration-300 rounded-xl flex justify-center"
+            >
               <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
                 <path
                   stroke-linecap="round"
@@ -41,49 +59,82 @@
                 />
               </svg>
             </label>
-            <!--3 Links in SideBar-->
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100"
-              >ارتباط با ما</a
-            >
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100">درباره ما</a>
-            <a href="#" class="block py-2 px-4 hover:bg-gray-100">صفحه اصلی</a>
           </div>
+        </div>
+        <div>
+          <!--Title-->
+          <a href="index.html" class="text-xl font-bold md:pl-10">کوئرا لیست</a>
+        </div>
+        <!--Empty Place-->
+        <div class="w-4 bg-white h-4 md:hidden"></div>
+        <!-- 3 Links -->
+        <div class="hidden md:flex gap-10">
+          <a href="index.html" class="text-blue-500 hover:text-blue-700"
+            >صفحه اصلی</a
+          >
+          <a href="about.html" class="text-gray-800 hover:text-blue-500"
+            >درباره ما</a
+          >
+          <a href="contact.html" class="text-gray-800 hover:text-blue-500"
+            >ارتباط با ما</a
+          >
+        </div>
+      </div>
+      <!-- Buttons on Left -->
+      <div class="md:flex gap-3 hidden items-center">
+        <!-- Blue Botton -->
+        <div>
+          <button
+            class="bg-blue-500 text-white hover:bg-blue-700 w-36 h-11 rounded"
+          >
+            ورود به اپلیکیشن
+          </button>
+        </div>
+        <!-- Toggle Theme Button -->
+        <div>
+          <button
+            class="bg-white border text-white hover:bg-gray-300 rounded-lg h-11 w-11 px-3 flex items-center"
+          >
+            <img src="assets/icons/toggle-theme.svg" alt="toggle-theme" />
+          </button>
         </div>
       </div>
     </nav>
-    <div>
-      <img
-        class="w-[328px] h-[350px] m-auto my-3"
-        src="./assets/images/Frame 427321285.png"
-        alt="arad"
-      />
-    </div>
-    <div class="w-[328px] h-[509px]justify-center m-auto">
-      <div class="gap-2s m-auto">
-        <h3 class="text-center text-black font-bold text-2xl my-3">
-          درباره ما
-        </h3>
-        <h3 class="text-intro my-10 text-center font-bold text-2xl">
-          آراد سعیدی و محمد زارعی
-        </h3>
+    <div class="w-80 m-auto md:grid grid-cols-2 gap-6">
+      <div>
+        <img
+          class="w-80 m-auto my-3 -order-1"
+          src="./assets/images/Frame 427321285.png"
+          alt="arad"
+        />
       </div>
-      <div class="border rounded-2xl bg-white">
-        <p class="text-center py-5 px-3 text-sm leading-8">
-          کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
-          اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود
-          نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده
-          نمایند. کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
-          معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر
-          دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه <br />
-          مبتنی بر وب آن استفاده نمایند. <br />
-          کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
-          اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود
-          نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده
-          نمایند.
-        </p>
+      <div class="w-[328px] h-[509px]justify-center m-auto order-1">
+        <div class="gap-2s m-auto">
+          <h3 class="text-center text-black font-bold text-2xl my-3">
+            درباره ما
+          </h3>
+          <h3 class="text-intro my-10 text-center font-bold text-2xl">
+            آراد سعیدی و محمد زارعی
+          </h3>
+        </div>
+        <div class="border rounded-2xl bg-white">
+          <p class="text-center py-5 px-3 text-sm leading-8">
+            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
+            اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود
+            نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده
+            نمایند. کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای
+            معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر
+            دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه <br />
+            مبتنی بر وب آن استفاده نمایند. <br />
+            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر
+            اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود
+            نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده
+            نمایند.
+          </p>
+        </div>
       </div>
     </div>
-    <div class="container py-6 w-[328px] m-auto">
+    <div class="container py-6 w-[328px] m-auto -order-1">
       <div class="grid grid-cols-2 sm:grid-cols-2 gap-4">
         <div class="bg-white border rounded-xl p-6">
           <div class="text-blue-500 text-2xl font-semibold mb-2">تهران</div>
@@ -103,34 +154,42 @@
           <div class="text-gray-600">سال تجربه کار</div>
         </div>
       </div>
-      <div class="flex justify-center items-center gap-3 pt-10">
-        <div class="before:content block w-[113px] h-[1px] bg-gray-500"></div>
-        <h3 class="text-black text-center">کوئرالیست</h3>
-        <div class="after:content block w-[113px] h-[1px] bg-gray-500"></div>
+    </div>
+    <div class="px-4">
+      <div class="flex justify-center gap-6 items-center pt-10">
+        <hr class="before:content h-0.5 block w-full md:w-60 bg-gray-400" />
+        <h3 class="text-black text-center text-xl">کوئرالیست</h3>
+        <hr class="after:content h-0.5 block w-full md:w-60 bg-gray-400" />
       </div>
-      <div class="w-[328px] pt-10">
-        <div class="w-[328px] mb-10">
-          <h5 class="mt-1 mr-1 font-bold text-[14px] leading-[21.7px]">
-            با ما در ارتباط باش
-          </h5>
-          <p class="mt-1 mr-1 text-xs font-normal w-[311px]">
-            اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر بشی.
-          </p>
+
+      <div class="flex md:flex-row flex-col justify-center">
+        <div
+          class="pt-10 px-4 sm:flex flex-col justify-center flex-1 md:order-2"
+        >
+          <div class="md:flex justify-center">
+            <div class="mb-10 md:flex- justify-center">
+              <h5 class="mb-3 font-bold">با ما در ارتباط باش</h5>
+              <p class="text-sm font-normal">
+                اگه میخوای اولین نفری باشی که از فیچرهای جدید و تخفیفات با خبر
+                بشی.
+              </p>
+            </div>
+            <div class="w-full relative flex justify-end items-center md:w-96">
+              <input
+                class="w-full h-14 border border-solid border-gray-300 rounded-2xl py-4 px-4"
+                type="email"
+                placeholder="ایمیل"
+              />
+              <button
+                class="h-10 w-16 border text-white rounded-xl bg-blue-600 absolute left-2"
+              >
+                ارسال
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="w-[328px] max-w-[100%] relative">
-          <input
-            class="w-[100%] h-[50px] border-2 border-solid border-gray-500 rounded-[16px] py-4 px-4"
-            type="email"
-            placeholder="ایمیل"
-          />
-          <button
-            class="h-[40px] w-[65px] border text-white rounded-[14px] bg-blue-600 absolute left-[5px] top-[5px]"
-          >
-            ارسال
-          </button>
-        </div>
-        <div class="grid grid-cols-2 my-8 gap-4">
-          <div class="bg-white border rounded-xl p-3 row-span-2">
+        <div class="grid grid-cols-2 my-8 gap-4 flex-1 md:order-1">
+          <div class="bg-white border rounded-xl p-3 w-full row-span-2">
             <div
               class="rounded-[50%] w-10 h-10 m-auto my-4 bg-blue-100 relative"
             >
@@ -140,33 +199,45 @@
                 alt="location"
               />
             </div>
-            <p class="text-[10px] my-5 text-center">
+            <p class="text-xs my-5 text-center">
               آدرس دفتر مرکزی: پونک -<br />
               خیابان اشرفی اصفهانی -<br />
               خیابان صبحدل- بن بست شب بو
             </p>
           </div>
-          <div class="bg-white border rounded-xl p-3">
+          <div
+            class="bg-white border rounded-xl p-3 w-full flex gap-4 justify-center items-center"
+          >
             <div class="rounded-[50%] w-10 h-10 my-2 bg-blue-100 relative">
               <img
                 class="bg-blue-100 absolute right-3 bottom-3 rounded-[50%]"
                 src="./assets/icons/call.svg"
               />
             </div>
+            <div class="text-xs">
+              <p>تلفن پشتیبانی</p>
+              <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+            </div>
           </div>
-          <div class="bg-white border rounded-xl p-3">
+          <div
+            class="bg-white border rounded-xl p-3 flex gap-4 justify-center items-center w-full"
+          >
             <div class="rounded-[50%] w-10 h-10 my-2 bg-blue-100 relative">
               <img
                 class="bg-blue-100 absolute right-3 bottom-3 rounded-[50%]"
                 src="./assets/icons/fluent_fax-20-filled.svg"
               />
             </div>
+            <div class="text-xs">
+              <p>تلفن پشتیبانی</p>
+              <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+            </div>
           </div>
         </div>
       </div>
-      <p class="text-center text-[12px] text-gray-600">
-        تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
-      </p>
     </div>
+    <footer class="text-center text-gray-600 px-4 pb-10">
+      تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+    </footer>
   </body>
 </html>
